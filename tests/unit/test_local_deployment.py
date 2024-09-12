@@ -2,6 +2,7 @@
 
 import unittest
 from unittest.mock import patch, MagicMock
+import subprocess  # Add this import
 from src.llm_integration.local_deployment import OllamaDeployment
 
 class TestOllamaDeployment(unittest.TestCase):

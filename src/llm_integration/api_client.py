@@ -7,7 +7,7 @@ class OllamaClient:
     def __init__(self, base_url: str = "http://localhost:11434"):
         self.base_url = base_url
 
-    def generate(self, prompt: str, model: str = "llama2", params: Optional[Dict[str, Any]] = None) -> str:
+    def generate(self, prompt: str, model: str = "phi3", params: Optional[Dict[str, Any]] = None) -> str:
         """
         Generate a response using the Ollama API.
 
