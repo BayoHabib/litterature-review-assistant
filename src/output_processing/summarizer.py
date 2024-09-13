@@ -10,8 +10,8 @@ class Summarizer:
     def __init__(self, model: str = "phi3"):
         self.client = OllamaClient()
         self.model = model
-        self.index_manager = IndexManager()  # Assume index is already created and loaded
-        self.rag_manager = RAGManager(self.index_manager)
+        index_manager = IndexManager()  # Assume index is already created and loaded
+        self.rag_manager = RAGManager(index_manager)
 
     def summarize_paper(self, paper: Dict[str, str]) -> str:
         """
